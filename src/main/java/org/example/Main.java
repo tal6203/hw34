@@ -1,7 +1,7 @@
 package org.example;
 
 public class Main {
-    static void startMusicShow(IPlayer player) {
+    static void startMusicShow(Player player) {
         player.play();
 
         if (player.getClass() == GuitarPlayer.class) {
