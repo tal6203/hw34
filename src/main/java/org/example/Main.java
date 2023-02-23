@@ -1,7 +1,7 @@
 package org.example;
 
 public class Main {
-    static void startMusicShow(Player player) {
+    static void startMusicShow(IPlayer player) {
         player.play();
 
         if (player.getClass() == GuitarPlayer.class) {
@@ -27,8 +27,8 @@ public class Main {
         bigDog.greets(dog);
         bigDog.greets(bigDog);
 
-        GuitarPlayer guitarPlayer = new GuitarPlayer("Alex","Rock");
-        PianoPlayer pianoPlayer = new PianoPlayer("Bella","Classic");
+        IPlayer guitarPlayer = new GuitarPlayer("Alex","Rock");
+        IPlayer pianoPlayer = new PianoPlayer("Bella","Classic");
         startMusicShow(guitarPlayer);
         startMusicShow(pianoPlayer);
 
